@@ -1,8 +1,9 @@
 FROM centos:7.6.1810
 
-# =================================== EPEL
+# =================================== EPEL & Tools
 RUN yum -y update; yum clean all && \
 	yum -y install epel-release; yum clean all
+RUN yum install -y openssl git
 
 # =================================== Node
 RUN yum -y install curl
