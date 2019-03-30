@@ -1,9 +1,14 @@
-FROM centos:7.4.1708
+FROM centos:7.6.1810
 
 # =================================== EPEL
 RUN yum -y update; yum clean all && \
 	yum -y install epel-release; yum clean all
-	
+
 # ==================================== Java 8
 RUN yum -y install java-1.8.0-openjdk-devel
 RUN java -version
+
+# ==================================== AWS Cli
+RUN yum install -y python-pip && \
+	pip install --upgrade pip && \
+	pip install awscli --upgrade
