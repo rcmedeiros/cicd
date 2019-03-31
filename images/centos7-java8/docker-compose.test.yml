@@ -1,0 +1,9 @@
+sut:
+  build: .
+  command: >
+    bash -c "
+    java -version &&
+    javac -version &&
+    git --version &&
+    aws --version
+    "
