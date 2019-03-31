@@ -1,0 +1,13 @@
+sut:
+  build: .
+  command: >
+    bash -c "
+    java -version &&
+    javac -version &&
+    node --version &&
+    npm --version &&
+    python --version &&
+    pip --version &&
+    git --version &&
+    aws --version
+    "

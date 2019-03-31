@@ -1,0 +1,9 @@
+sut:
+  build: .
+  command: >
+    bash -c "
+    node --version &&
+    npm --version &&
+    git --version &&
+    aws --version
+    "

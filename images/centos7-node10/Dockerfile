@@ -10,9 +10,6 @@ RUN yum -y install curl
 RUN curl -sL https://rpm.nodesource.com/setup_10.x | bash -
 RUN yum -y install nodejs
 
-RUN node --version
-RUN npm --version
-
 # ==================================== AWS Cli
 RUN yum install -y python-pip && \
 	pip install --upgrade pip && \

@@ -19,8 +19,5 @@ RUN cd /usr/src && \
     python /usr/local/lib/python3.7/site-packages/easy_install.py pip && \
     pip install --upgrade pip
 
-RUN python --version && \
-    pip --version
-
 # ==================================== AWS Cli
 RUN pip install awscli --upgrade

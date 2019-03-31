@@ -7,7 +7,6 @@ RUN yum install -y openssl git
 
 # ==================================== Java 8
 RUN yum -y install java-1.8.0-openjdk-devel
-RUN java -version
 
 # ==================================== AWS Cli
 RUN yum install -y python-pip && \

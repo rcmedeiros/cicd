@@ -1,0 +1,9 @@
+sut:
+  build: .
+  command: >
+    bash -c "
+    python --version &&
+    pip --version &&
+    git --version &&
+    aws --version
+    "
