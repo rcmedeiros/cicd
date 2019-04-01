@@ -14,7 +14,7 @@ RUN yum -y install curl && \
 RUN yum -y install java-1.8.0-openjdk-devel
 
 # =================================== Python
-RUN yum -y install gcc openssl-devel bzip2-devel libffi-devel wget make
+RUN yum -y install gcc openssl-devel bzip2-devel libffi-devel wget make jq
 
 RUN cd /usr/src && \
 	wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz && \
