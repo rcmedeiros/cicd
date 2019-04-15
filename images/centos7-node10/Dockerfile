@@ -3,7 +3,7 @@ FROM centos:7.6.1810
 # =================================== EPEL & Tools
 RUN yum -y update; yum clean all && \
 	yum -y install epel-release; yum clean all
-RUN yum install -y openssl git tree jq
+RUN yum install -y openssl openssh-client git tree jq zip unzip libxml2-utils
 
 # =================================== Node
 RUN yum -y install curl
