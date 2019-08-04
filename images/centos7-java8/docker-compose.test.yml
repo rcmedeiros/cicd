@@ -5,5 +5,15 @@ sut:
     java -version &&
     javac -version &&
     git --version &&
-    aws --version
+    aws --version &&
+    mvn --version &&
+    openssl version &&
+    ssh -V &&
+    tree --version &&
+    jq --version &&
+    zip -h &&
+    unzip -h &&
+    wget --version &&
+    curl --version &&
+    ./sonar-scanner/bin/sonar-scanner -h
     "
