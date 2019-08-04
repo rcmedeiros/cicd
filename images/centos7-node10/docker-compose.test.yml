@@ -5,5 +5,14 @@ sut:
     node --version &&
     npm --version &&
     git --version &&
-    aws --version
+    aws --version &&
+    openssl version &&
+    ssh -V &&
+    tree --version &&
+    jq --version &&
+    zip -h &&
+    unzip -h &&
+    wget --version &&
+    curl --version &&
+    ./sonar-scanner/bin/sonar-scanner -h
     "

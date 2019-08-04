@@ -3,7 +3,7 @@ FROM centos:7.6.1810
 # =================================== EPEL & Tools
 RUN yum -y update; yum clean all && \
     yum -y install epel-release; yum clean all
-RUN yum install -y openssl openssh-client git tree jq zip unzip libxml2-utils
+RUN yum install -y openssl git tree jq zip unzip libxml2-utils wget curl
 
 # =================================== Python
 RUN yum -y install gcc openssl-devel bzip2-devel libffi-devel wget make

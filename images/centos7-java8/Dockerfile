@@ -8,7 +8,6 @@ RUN yum install -y openssl openssh-client git tree jq zip unzip libxml2-utils wg
 # ==================================== Java 8
 RUN yum -y install java-1.8.0-openjdk-devel
 ENV JAVA_HOME /etc/alternatives/java_sdk
-RUN javac -version
 
 # ==================================== Maven 3
 RUN wget http://www-us.apache.org/dist/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz && \
@@ -17,8 +16,6 @@ RUN wget http://www-us.apache.org/dist/maven/maven-3/3.6.1/binaries/apache-maven
 
 ENV M2_HOME /apache-maven
 ENV PATH=${M2_HOME}/bin:${PATH}
-
-RUN mvn --version
 
 # ==================================== AWS Cli
 RUN yum install -y python-pip && \

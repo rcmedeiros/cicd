@@ -22,8 +22,6 @@ RUN wget http://www-us.apache.org/dist/maven/maven-3/3.6.1/binaries/apache-maven
 ENV M2_HOME /apache-maven
 ENV PATH=${M2_HOME}/bin:${PATH}
 
-RUN mvn --version
-
 # =================================== Python
 RUN yum -y install gcc openssl-devel bzip2-devel libffi-devel wget make jq
 
