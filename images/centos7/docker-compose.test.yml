@@ -10,6 +10,7 @@ sut:
     pip --version &&
     git --version &&
     aws --version &&
+    mvn --version &&
     openssl version &&
     ssh -V &&
     tree --version &&
